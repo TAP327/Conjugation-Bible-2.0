@@ -36,7 +36,10 @@ def Imperfetto():
     pronomo = random.choice(pronomi)
     verbo = random.choice(verbi)
     risposta = input("(" + pronomo + ") " + verbo + " al L'imperfetto: ")
-    if verbo == "parlare":
+    if risposta.lower() == "x":
+        print("Grazie per aver giocato!")
+        exit()
+    elif verbo == "parlare":
         if pronomo == "io" and risposta == "parlavo":
             print("Corretto!")
         elif pronomo == "tu" and risposta == "parlavi":
@@ -166,8 +169,3 @@ def Imperfetto():
                 "TRADURRE:  traducevo, traducevi, traducevo, traducevamo, traducevate, traducevano"
             )
             print("Mi dispiace, è sbagliato.  Riprova.")
-    elif risposta.lower() == "x":
-        print("Grazie per aver giocato!")
-        exit()
-
-

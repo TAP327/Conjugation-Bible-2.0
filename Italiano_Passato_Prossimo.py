@@ -64,7 +64,10 @@ def Passato_Prossimo():
     pronomo = random.choice(pronomi)
     verbo = random.choice(verbi)
     risposta = input("(" + pronomo + ") " + verbo + " al Passato Prossimo: ")
-    if verbo == "parlare":
+    if risposta.lower() == "x":
+        print("Grazie per aver giocato!")
+        exit()
+    elif verbo == "parlare":
         if pronomo == "lui" and risposta == "ha parlato":
             print("Corretto!")
         elif pronomo == "lei" and risposta == "ha parlato":
@@ -479,6 +482,4 @@ def Passato_Prossimo():
             print("Morire (morto)")
         else:
             print("Partire (partito)")
-    elif risposta.lower() == "x":
-        print("Grazie per aver giocato!")
-        exit()
+

@@ -33,7 +33,7 @@ def Imperfecto():
         raiz = "viv"
     else:
         raiz = "nada"
-    if raiz == "habl":
+    if verbo[0] == "hablar":
         if pronombre in ["yo", "él"]:
             sufijo = "aba"
         elif pronombre == "tu":
@@ -46,7 +46,7 @@ def Imperfecto():
             sufijo = "abais"
         else:
             sufijo = "aban"
-    elif raiz in ["comer", "vivir"]:
+    elif verbo[0] in ["comer", "vivir"]:
         if pronombre in ["yo", "él"]:
             sufijo = "ía"
         elif pronombre == "tu":
@@ -57,7 +57,7 @@ def Imperfecto():
             sufijo = "íais"
         else:
             sufijo = "ían"
-    elif raiz == "ser":
+    elif verbo [0] == "ser":
         if pronombre in ["yo", "él"]:
             sufijo = "era"
         elif pronombre == "tu":
@@ -84,13 +84,14 @@ def Imperfecto():
     else:
         clave = sufijo
     respuesta = input("(" + pronombre + ") " + verbo[0] + " en el imperfecto: ")
-    while respuesta.lower() != "x":
+    if respuesta.lower() != "x":
         if respuesta == clave:
-            return "¡Felicitaciones!"
-        elif respuesta.lower() == "x":
-            return "¡Gracias por jugar!"
+            print("¡Felicitaciones!")
         else:
-            return verbo[1]
+            print(verbo[1])
+    else:
+        print("¡Gracias por jugar!")
+        exit()
 
 
 

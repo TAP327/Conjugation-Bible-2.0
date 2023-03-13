@@ -43,7 +43,7 @@ El Presente:
 import random
 
 
-def Presentito():
+def Presente():
     pronombres = ["yo", "tu", "él", "nosotros", "vosotros", "ellos"]
     verbos = {
         "hablar": "-AR:  -o, -as, -a, -amos, -áis, -an",
@@ -88,8 +88,7 @@ def Presentito():
         raiz = "viv"
     elif verbo in [
         "haber",
-        "ser",
-        "estar",
+        "ser"
     ]:
         raiz = "nada"
     elif verbo == "estar":
@@ -183,10 +182,10 @@ def Presentito():
         else:
             raiz = "distingu"
     elif verbo == "concluir":
-        if pronombre in ["yo", "ellos"]:
-            raiz = "concluy"
-        else:
+        if pronombre in ["nosotros", "vosotros"]:
             raiz = "conclu"
+        else:
+            raiz = "concluy"
     elif verbo == "caber":
         if pronombre == "yo":
             raiz = "quep"
@@ -196,7 +195,7 @@ def Presentito():
         if pronombre == "yo":
             raiz = "caig"
         else:
-            raiz = "cae"
+            raiz = "ca"
     elif verbo == "dar":
         raiz = "d"
     elif verbo == "saber":
@@ -278,7 +277,7 @@ def Presentito():
             "salir",
             "poner",
             "distinguir",
-            "conlcluir",
+            "concluir",
             "caber",
             "caer",
             "saber",
@@ -300,6 +299,7 @@ def Presentito():
             sufijo = "a"
         elif verbo in [
             "comer",
+            "vivir",
             "ir",
             "volver",
             "repetir",
@@ -333,13 +333,14 @@ def Presentito():
         elif verbo == "ir":
             sufijo = "va"
     elif pronombre == "nosotros":
-        if verbo in ["hablar", "pensar", "jugar", "dar", "estar,"]:
+        if verbo in ["hablar", "pensar", "jugar", "dar", "estar"]:
             sufijo = "amos"
         elif verbo in [
             "comer",
             "volver",
             "oler",
             "escoger",
+            "conocer",
             "hacer",
             "tener",
             "poner",
@@ -451,16 +452,19 @@ def Presentito():
         clave = raiz + sufijo
     respuesta = input("(" + pronombre + ") " + verbo + " en el presente: ")
     if respuesta == clave:
-        return "¡Eso!"
+        print("¡Eso!")
     elif respuesta.lower() == "x":
-        return "x"
+        print("¡Gracias por juagr!")
+        exit()
     else:
-        return verbos[verbo]
+        print(verbos[verbo])
 
-def Presente():
+
+
+def Presente1():
     terminado = None
     while terminado != "x":
-        terminado = Presentito()
+        terminado = Presente()
         if terminado == "x":
             print("¡Gracias por juagr!")
             exit()

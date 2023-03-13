@@ -35,7 +35,7 @@ def Omnes_Praesentes():
     random.choice(Praesentia_tempora)
 
 def Omnia_Gernudia():
-    Gerundia = [IP.Gerundi()]
+    Gerundia = [IG.Gerundi()]
     random.choice(Gerundia)
 
 def Omnia_Imperfecta():
@@ -76,9 +76,9 @@ def Romance_Dominus():
                 print(
                     "Lo siento, pero ese tiempo todavía no existe en la Biblia de Conjugación :("
                 )
-        elif electio.lower() == "b":
+        elif elige_linguam.lower() == "b":
             print("Eu sento, mas português ainda não existe na Biblia de Conjugação :(")
-        elif electio.lower() == "c":
+        elif elige_linguam.lower() == "c":
             if tempus_de_linguam.lower() == "a":
                 while 1:
                     IP.Presente()
@@ -99,7 +99,7 @@ def Romance_Dominus():
                 "Je suis désolée, mais français n'existe toujours dans la Bible de Conjugaisons :("
             )
         print("Finem programmatis. Gratias tibi!")
-    if electio == "b":
+    elif electio == "b":
         elige_tempus = input(
             "Would you like to study... a. Present Simple  b. Present Progressive  c. Imperfect  d. Preterite & Composite Past  "
         )
