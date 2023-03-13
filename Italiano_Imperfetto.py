@@ -1,4 +1,4 @@
-'''''
+"""''
 L'Imperfetto: 
     -ARE:  -avo, -avi, -ava, -avamo, -avate, -avano
     -ERE:  -evo, -evi, -eva, -evamo, -evate, -evano
@@ -17,7 +17,7 @@ L'Imperfetto:
     
     Da:
         preposition used to mean 'had been': "aspettavo da due ore"
-'''''
+""" ""
 import random
 
 

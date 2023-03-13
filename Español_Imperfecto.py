@@ -1,4 +1,4 @@
-'''''
+"""''
 El Imperfecto:
     -AR: -aba, -abas, -aba, -ábamos, -abais, -aban
     -ER: -ía, -ías, -ía, -íamos, -íais, -ían
@@ -10,7 +10,7 @@ El Imperfecto:
     
     Desde Hace:
         La preposición que significa 'had been': "Esperaba desde hace dos horas"
-'''''
+""" ""
 import random
 
 
@@ -57,7 +57,7 @@ def Imperfecto():
             sufijo = "íais"
         else:
             sufijo = "ían"
-    elif verbo [0] == "ser":
+    elif verbo[0] == "ser":
         if pronombre in ["yo", "él"]:
             sufijo = "era"
         elif pronombre == "tu":

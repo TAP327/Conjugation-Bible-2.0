@@ -1,6 +1,6 @@
 import random
 
-'''''
+"""''
 Il Presente:
     -ARE:  -o, -i, -a, -iamo, -ate, -ano
     -ERE:  -o, -i, -e, -iamo, -ete, -ono
@@ -35,7 +35,7 @@ Il Presente:
 
         *CONOSCERE, SENTRIRE, & DORMIRE are regular  
             (Yes, dormire is the model verb I used.  No, I'm not trying to patronize you. )
-'''''
+""" ""
 
 
 def Presente():

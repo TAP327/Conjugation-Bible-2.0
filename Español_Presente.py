@@ -1,4 +1,4 @@
-'''''
+"""''
 El Presente:
     Los Verbos Regulares:
         -AR:  -o, -as, -a, -amos, -áis, -an
@@ -39,7 +39,7 @@ El Presente:
         TRAER:  traigo, traes, trae, traemos, traéis, traen
         VALER:  valgo, vales vale, valemos, valéis, valen
         VER:  veo, ves, ve, vemos, véis, ven
-'''''
+""" ""
 import random
 
 
@@ -86,10 +86,7 @@ def Presente():
         raiz = "com"
     elif verbo == "vivir":
         raiz = "viv"
-    elif verbo in [
-        "haber",
-        "ser"
-    ]:
+    elif verbo in ["haber", "ser"]:
         raiz = "nada"
     elif verbo == "estar":
         raiz = "est"
@@ -458,7 +455,6 @@ def Presente():
         exit()
     else:
         print(verbos[verbo])
-
 
 
 def Presente1():

@@ -1,4 +1,4 @@
-'''''
+"""''
 Gerundios:
     -AR:  -ando
     -ER:  -iendo
@@ -26,42 +26,47 @@ Gerundios:
     Verbos Irregulares:
         IR: yendo
 
-'''''
+""" ""
 import random
+
 
 def Gerundios():
     verbos = [
-        ['hablar', 'hablando'], 
-        ['comer', 'comiendo'], 
-        ['vivir', 'viviendo'], 
-        ['traer', 'trayendo'],
-        ['caer', 'cayendo'],
-        ['huir', 'huyendo'],
-        ['construir', 'construyendo'],
-        ['concluir', 'concluyendo'],
-        ['leer', 'leyendo'],
-        ['creer', 'creyendo'],
-        ['oir', 'oyendo'],
-        ['distinguir', 'distinguiendo'],
-        ['extinguir', 'extingo'],
-        ['reir', 'riendo'],
-        ['freir', 'friendo'],
-        ['mentir', 'mintiendo'],
-        ['preferir', 'prefiriendo'],
-        ['vestir', 'vistiendo'],
-        ['seguir', 'siguiendo'],
-        ['morir', 'muriendo'],
-        ['dormir', 'durmiendo'],
-        ['contar', 'contando'],
-        ['empezar', 'empezando'],
-        ['ir', 'yendo']
-        ]
+        ["hablar", "hablando"],
+        ["comer", "comiendo"],
+        ["vivir", "viviendo"],
+        ["traer", "trayendo"],
+        ["caer", "cayendo"],
+        ["huir", "huyendo"],
+        ["construir", "construyendo"],
+        ["concluir", "concluyendo"],
+        ["leer", "leyendo"],
+        ["creer", "creyendo"],
+        ["oir", "oyendo"],
+        ["distinguir", "distinguiendo"],
+        ["extinguir", "extingo"],
+        ["reir", "riendo"],
+        ["freir", "friendo"],
+        ["mentir", "mintiendo"],
+        ["preferir", "prefiriendo"],
+        ["vestir", "vistiendo"],
+        ["seguir", "siguiendo"],
+        ["morir", "muriendo"],
+        ["dormir", "durmiendo"],
+        ["contar", "contando"],
+        ["empezar", "empezando"],
+        ["ir", "yendo"],
+    ]
     verbo = random.choice(verbos)
-    respuesta = input('¿Qué es el gerundio del verbo ' + verbo[0] + ' en español?  ')
+    respuesta = input("¿Qué es el gerundio del verbo " + verbo[0] + " en español?  ")
     if respuesta == verbo[1]:
         print("¡Perfecto!")
-    elif respuesta.lower() == 'x':
-        print('¡Gracias por jugar!')
+    elif respuesta.lower() == "x":
+        print("¡Gracias por jugar!")
         exit()
     else:
-        print("Lo siento, pero no tienes razón. La respuesta indicada es '" + verbo[1] + "'.")
+        print(
+            "Lo siento, pero no tienes razón. La respuesta indicada es '"
+            + verbo[1]
+            + "'."
+        )

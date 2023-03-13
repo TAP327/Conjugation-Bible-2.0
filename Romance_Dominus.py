@@ -2,16 +2,19 @@ import random
 import Español_Presente as EP
 import Español_Gerundios as EG
 import Español_Imperfecto as EI
+import Español_Pretérito as EPret
 import Italiano_Presente as IP
 import Italiano_Gerundi as IG
 import Italiano_Imperfetto as II
 import Italiano_Passato_Prossimo as IPP
+
 
 def Omnia():
     Verbum_Temporis = [
         EP.Presente(),
         EG.Gerundios(),
         EI.Imperfecto(),
+        EPret.Pretérito(),
         IP.Presente(),
         IG.Gerundi(),
         II.Imperfetto(),
@@ -19,9 +22,16 @@ def Omnia():
     ]
     random.choice(Verbum_Temporis)
 
+
 def Todos():
-    Tiempos_Verbales = [EP.Presente(), EG.Gerundios(), EI.Imperfecto()]
+    Tiempos_Verbales = [
+        EP.Presente(),
+        EG.Gerundios(),
+        EI.Imperfecto(),
+        EPret.Pretérito(),
+    ]
     random.choice(Tiempos_Verbales)
+
 
 def Tutti():
     Tempi_Verbali = [
@@ -32,21 +42,26 @@ def Tutti():
     ]
     random.choice(Tempi_Verbali)
 
+
 def Omnes_Praesentes():
     Praesentia_tempora = [EP.Presente(), IP.Presente()]
     random.choice(Praesentia_tempora)
+
 
 def Omnia_Gernudia():
     Gerundia = [EG.Gerundios(), IG.Gerundi()]
     random.choice(Gerundia)
 
+
 def Omnia_Imperfecta():
     Tempora_Imperfecta = [EI.Imperfecto(), II.Imperfetto()]
     random.choice(Tempora_Imperfecta)
 
+
 def Omnes_Praeteriti():
-    Praeteritis_Temporibus = [IPP.Passato_Prossimo()]
+    Praeteritis_Temporibus = [EPret.Pretérito(), IPP.Passato_Prossimo()]
     random.choice(Praeteritis_Temporibus)
+
 
 def Romance_Dominus():
     electio = input(
@@ -74,6 +89,9 @@ def Romance_Dominus():
             elif tempus_de_linguam.lower() == "c":
                 while 1:
                     EI.Imperfecto()
+            elif tempus_de_linguam.lower() == "d":
+                while 1:
+                    EPret.Pretérito()
             elif tempus_de_linguam.lower() == "e":
                 while 1:
                     Todos()
@@ -121,9 +139,10 @@ def Romance_Dominus():
         while 1:
             Omnia()
 
+
 Romance_Dominus()
 
-'''''
+"""''
 Next up is... 
     -Double checking the current code 
         -Adding present progressive corrections
@@ -150,4 +169,4 @@ Stats:
         Español_Gerundos: r/n
         Español_Imperfecto: r/n
         Español_Preterito: r/n
-'''''
+""" ""
