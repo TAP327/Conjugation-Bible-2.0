@@ -1,5 +1,6 @@
 import random
 import Español_Presente as EP
+import Español_Gerundios as EG
 import Español_Imperfecto as EI
 import Italiano_Presente as IP
 import Italiano_Gerundi as IG
@@ -9,6 +10,7 @@ import Italiano_Passato_Prossimo as IPP
 def Omnia():
     Verbum_Temporis = [
         EP.Presente(),
+        EG.Gerundios(),
         EI.Imperfecto(),
         IP.Presente(),
         IG.Gerundi(),
@@ -18,7 +20,7 @@ def Omnia():
     random.choice(Verbum_Temporis)
 
 def Todos():
-    Tiempos_Verbales = [EP.Presente(), EI.Imperfecto()]
+    Tiempos_Verbales = [EP.Presente(), EG.Gerundios(), EI.Imperfecto()]
     random.choice(Tiempos_Verbales)
 
 def Tutti():
@@ -35,7 +37,7 @@ def Omnes_Praesentes():
     random.choice(Praesentia_tempora)
 
 def Omnia_Gernudia():
-    Gerundia = [IG.Gerundi()]
+    Gerundia = [EG.Gerundios(), IG.Gerundi()]
     random.choice(Gerundia)
 
 def Omnia_Imperfecta():
@@ -66,6 +68,9 @@ def Romance_Dominus():
             if tempus_de_linguam.lower() == "a":
                 while 1:
                     EP.Presente()
+            elif tempus_de_linguam.lower() == "b":
+                while 1:
+                    EG.Gerundios()
             elif tempus_de_linguam.lower() == "c":
                 while 1:
                     EI.Imperfecto()
