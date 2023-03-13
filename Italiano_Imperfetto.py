@@ -169,3 +169,5 @@ def Imperfetto():
     elif risposta.lower() == "x":
         print("Grazie per aver giocato!")
         exit()
+
+

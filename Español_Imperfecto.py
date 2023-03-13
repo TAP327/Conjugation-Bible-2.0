@@ -14,7 +14,7 @@ El Imperfecto:
 import random
 
 
-def Español_Imperfecto():
+def Imperfecto():
     pronombres = ["yo", "tu", "él", "nosotros", "vosotros", "ellos"]
     verbos = [
         ["hablar", "-AR: -aba, -abas, -aba, -ábamos, -abais, -aban,"],
@@ -93,7 +93,7 @@ def Español_Imperfecto():
             return verbo[1]
 
 
-print(Español_Imperfecto())
+
 """''
 Metas y Recomendaciones:  
     - String concatenation de nuevo

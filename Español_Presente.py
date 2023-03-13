@@ -43,40 +43,40 @@ El Presente:
 import random
 
 
-def presente():
+def Presentito():
     pronombres = ["yo", "tu", "él", "nosotros", "vosotros", "ellos"]
     verbos = {
         "hablar": "-AR:  -o, -as, -a, -amos, -áis, -an",
-        "comer": "-ER:  -o, -es, -e, -emos, -éis, -en" ,
-        "vivir": "-IR:  -o, -es, -e, -imos, -s, -en," ,
-        "haber":"HABER:  he, has, ha, hemos, habéis, han",
-        "ser":"SER:  soy, eres, es, somos, sois, son",
-        "estar":"ESTAR: estoy, estás, está, estamos, estáis, están",
-        "ir":"IR:  voy, vas, va, vamos, vais, van",
-        "pensar":"PENSAR:  pienso, piensas, piensa, pensamos, pensáis, piensan",
-        "volver":"VOLVER:  vuelvo, vuelves, vuelve, volvemos, volvéis, vuelven",
-        "repetir":"REPETIR:  repito, repites, repite, repetimos, repetís, repiten",
-        "adquirir":"ADQUIRIR:  adquiero, adquieres, adquiere, adquirimos, adquirís, adquieren",
-        "jugar":"JUGAR:  juego, juegas, juega, jugamos, jugáis, juegan",
-        "oler":"OLER:  huelo, hueles, huele, olemos, oléis, huelen",
-        "escoger":"ESCOGER:  escojo, escoges, escoge, escogemos, escogéis, escogen",
-        "fruncir":"FRUNCIR:  frunzo, frunces, frunce, fruncimos, fruncís, fruncen",
-        "conocer" :"CONOCER: conozco, conoces, conoce, conocemos, conocéis, conocen",
-        "decir" :"DECIR:  digo, dices, dice, decimos, decís, dicen",
-        "hacer" :"HACER:  hago, haces, hace, hacemos, hacéis, hacen",
-        "tener" :"TENER:  tengo, tienes, tiene, tenemos, tenéis, tienen",
-        "venir" :"VENIR:  vengo, vienes, viene, venemos, venéis, vienen",
-        "salir" :"SALIR:  salgo, sales, sale, salimos, salís, salen",
-        "poner" :"PONER:  pongo, pones, pone, ponemos, ponéis, ponen",
-        "distinguir" :"DISTINGUIR: distingo, distingues, distingue, distinguimos, distinguís, distinguen",
-        "concluir" :"CONCLUIR:  concluyo, concluyes, concluye, concluimos, concluís, concluyen",
-        "caber" :"CABER: quepo, cabes, cabe, cabemos, cabéis, caben",
-        "caer" :"CAER:  caigo, caes, cae, caemos, caéis, caen",
-        "dar" :"DAR:  doy, das, da, damos, dais, dan",
-        "saber" :"SABER:  sé, sabes, sabe, sabemos, sabéis, saben",
-        "traer" :"TRAER:  traigo, traes, trae, traemos, traéis, traen",
-        "valer" :"VALER:  valgo, vales vale, valemos, valéis, valen,", 
-        "ver":"VER:  veo, ves, ve, vemos, véis, ven"
+        "comer": "-ER:  -o, -es, -e, -emos, -éis, -en",
+        "vivir": "-IR:  -o, -es, -e, -imos, -s, -en,",
+        "haber": "HABER:  he, has, ha, hemos, habéis, han",
+        "ser": "SER:  soy, eres, es, somos, sois, son",
+        "estar": "ESTAR: estoy, estás, está, estamos, estáis, están",
+        "ir": "IR:  voy, vas, va, vamos, vais, van",
+        "pensar": "PENSAR:  pienso, piensas, piensa, pensamos, pensáis, piensan",
+        "volver": "VOLVER:  vuelvo, vuelves, vuelve, volvemos, volvéis, vuelven",
+        "repetir": "REPETIR:  repito, repites, repite, repetimos, repetís, repiten",
+        "adquirir": "ADQUIRIR:  adquiero, adquieres, adquiere, adquirimos, adquirís, adquieren",
+        "jugar": "JUGAR:  juego, juegas, juega, jugamos, jugáis, juegan",
+        "oler": "OLER:  huelo, hueles, huele, olemos, oléis, huelen",
+        "escoger": "ESCOGER:  escojo, escoges, escoge, escogemos, escogéis, escogen",
+        "fruncir": "FRUNCIR:  frunzo, frunces, frunce, fruncimos, fruncís, fruncen",
+        "conocer": "CONOCER: conozco, conoces, conoce, conocemos, conocéis, conocen",
+        "decir": "DECIR:  digo, dices, dice, decimos, decís, dicen",
+        "hacer": "HACER:  hago, haces, hace, hacemos, hacéis, hacen",
+        "tener": "TENER:  tengo, tienes, tiene, tenemos, tenéis, tienen",
+        "venir": "VENIR:  vengo, vienes, viene, venemos, venéis, vienen",
+        "salir": "SALIR:  salgo, sales, sale, salimos, salís, salen",
+        "poner": "PONER:  pongo, pones, pone, ponemos, ponéis, ponen",
+        "distinguir": "DISTINGUIR: distingo, distingues, distingue, distinguimos, distinguís, distinguen",
+        "concluir": "CONCLUIR:  concluyo, concluyes, concluye, concluimos, concluís, concluyen",
+        "caber": "CABER: quepo, cabes, cabe, cabemos, cabéis, caben",
+        "caer": "CAER:  caigo, caes, cae, caemos, caéis, caen",
+        "dar": "DAR:  doy, das, da, damos, dais, dan",
+        "saber": "SABER:  sé, sabes, sabe, sabemos, sabéis, saben",
+        "traer": "TRAER:  traigo, traes, trae, traemos, traéis, traen",
+        "valer": "VALER:  valgo, vales vale, valemos, valéis, valen,",
+        "ver": "VER:  veo, ves, ve, vemos, véis, ven",
     }
     pronombre = random.choice(pronombres)
     verbo = random.choice(list(verbos.keys()))
@@ -457,11 +457,11 @@ def presente():
     else:
         return verbos[verbo]
 
-
-terminado = None
-while terminado != "x":
-    terminado = presente()
-    if terminado == "x":
-        print("¡Gracias por juagr!")
-        exit()
-    print(terminado)
+def Presente():
+    terminado = None
+    while terminado != "x":
+        terminado = Presentito()
+        if terminado == "x":
+            print("¡Gracias por juagr!")
+            exit()
+        print(terminado)
