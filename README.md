@@ -4,7 +4,7 @@ This program is designed to help language learners practice verb conjugations in
 Spanish, Portuguese, Italian, and/or French.   Although it is still under 
 construction, the goal is that eventually, every tense in each of the four 
 languages will be available, and every model verb (stem changers, irregulars, 
-etc.) will be represented.  
+etc.) will be represented.  This is a project that I started on Quizlet back before I knew how to code and when Quizlet was free (I know, that's so low tech. It's fine though because I'm evolving).
 
         Tips & Encouragement
      
