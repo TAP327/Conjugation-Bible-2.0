@@ -1,4 +1,4 @@
-"""''
+'''''
 L'Imperfetto: 
     -ARE:  -avo, -avi, -ava, -avamo, -avate, -avano
     -ERE:  -evo, -evi, -eva, -evamo, -evate, -evano
@@ -7,17 +7,17 @@ L'Imperfetto:
 
     Verbi Irregulari:
     ESSERE:  ero, eri, era, eravamo, eravate, erano  
-        *Used for time: "erano le due del pomeriggio", "era lunedi",
-    FARE:  facevo, facevi, faceva, facevamo, facevate, facevano,
-    BERE:  bevevo, bevevi, bevevo, bevevamo, bevevate, bevevano,
-    DIRE:  dicevo, dicevi, dicevo, dicevamo, dicevate, dicevano,
+        *Used for time: "erano le due del pomeriggio", "era lunedi"
+    FARE:  facevo, facevi, faceva, facevamo, facevate, facevano
+    BERE:  bevevo, bevevi, bevevo, bevevamo, bevevate, bevevano
+    DIRE:  dicevo, dicevi, dicevo, dicevamo, dicevate, dicevano
     TRADURRE:  traducevo, traducevi, traducevo, traducevamo, traducevate, traducevano
     
     Note: Dare is suspiciously regular
     
     Da:
         preposition used to mean 'had been': "aspettavo da due ore"
-""" ""
+'''''
 import random
 
 
@@ -117,7 +117,7 @@ def Imperfetto():
         elif pronomo == "loro" and risposta == "facevano":
             print("Corretto!")
         else:
-            print("FARE:  facevo, facevi, faceva, facevamo, facevate, facevano,")
+            print("FARE:  facevo, facevi, faceva, facevamo, facevate, facevano")
             print("Mi dispiace, è sbagliato.  Riprova.")
     elif verbo == "bere":
         if pronomo == "io" and risposta == "bevevo":
@@ -134,7 +134,7 @@ def Imperfetto():
             print("Corretto!")
         else:
             print("Mi dispiace, è sbagliato.  Riprova.")
-            print("BERE:  bevevo, bevevi, bevevo, bevevamo, bevevate, bevevano,")
+            print("BERE:  bevevo, bevevi, bevevo, bevevamo, bevevate, bevevano")
     elif verbo == "dire":
         if pronomo == "io" and risposta == "dicevo":
             print("Corretto!")
@@ -149,7 +149,7 @@ def Imperfetto():
         elif pronomo == "loro" and risposta == "dicevano":
             print("Corretto!")
         else:
-            print("DIRE:  dicevo, dicevi, dicevo, dicevamo, dicevate, dicevano,")
+            print("DIRE:  dicevo, dicevi, dicevo, dicevamo, dicevate, dicevano")
             print("Mi dispiace, è sbagliato.  Riprova.")
     elif verbo == "tradurre":
         if pronomo == "io" and risposta == "traducevo":

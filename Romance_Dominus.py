@@ -137,6 +137,8 @@ Long Term Goals:
     - Create an executable (preferably with a UI that doesn't look like it was built in 2000)
     - Add a "See Notes" function for desperate times
 
+return verbs.get("porre") OR return verbs["porre"]  SECONDO LUI
+
 Stats:
     Italiano_Principale: 39 (5*1=5, 7.8)
         Italiano_Presente: 374 (28*6=168, 2.226)            Most efficient

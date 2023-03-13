@@ -1,45 +1,45 @@
-"""''
+'''''
 El Presente:
     Los Verbos Regulares:
-        -AR:  -o, -as, -a, -amos, -áis, -an,
-        -ER:  -o, -es, -e, -emos, -éis, -en,
-        -IR:  -o, -es, -e, -imos, -ís, -en, 
+        -AR:  -o, -as, -a, -amos, -áis, -an
+        -ER:  -o, -es, -e, -emos, -éis, -en
+        -IR:  -o, -es, -e, -imos, -ís, -en
 
     Los Verbos Irregulares:
-        HABER:  he, has, ha, hemos, habéis, han,
-        SER:  soy, eres, es, somos, sois, son,
-        ESTAR: estoy, estás, está, estamos, estáis, están,
-        IR:  voy, vas, va, vamos, vais, van,
+        HABER:  he, has, ha, hemos, habéis, han
+        SER:  soy, eres, es, somos, sois, son
+        ESTAR: estoy, estás, está, estamos, estáis, están
+        IR:  voy, vas, va, vamos, vais, van
         
     Stem Changers:  
-        E - IE  PENSAR:  pienso, piensas, piensa, pensamos, pensáis, piensan,
-        O - UE  VOLVER:  vuelvo, vuelves, vuelve, volvemos, volvéis, vuelven,
-        E - I   REPETIR:  repito, repites, repite, repetimos, repetís, repiten,
-        I - IE  ADQUIRIR:  adquiero, adquieres, adquiere, adquirimos, adquirís, adquieren,
-        U - UE  JUGAR:  juego, juegas, juega, jugamos, jugáis, juegan,
-        O - HUE OLER:  huelo, hueles, huele, olemos, oléis, huelen,
+        E - IE  PENSAR:  pienso, piensas, piensa, pensamos, pensáis, piensan
+        O - UE  VOLVER:  vuelvo, vuelves, vuelve, volvemos, volvéis, vuelven
+        E - I   REPETIR:  repito, repites, repite, repetimos, repetís, repiten
+        I - IE  ADQUIRIR:  adquiero, adquieres, adquiere, adquirimos, adquirís, adquieren
+        U - UE  JUGAR:  juego, juegas, juega, jugamos, jugáis, juegan
+        O - HUE OLER:  huelo, hueles, huele, olemos, oléis, huelen
 
-        G - J   ESCOGER:  escojo, escoges, escoge, escogemos, escogéis, escogen,
-        C - Z   FRUNCIR:  frunzo, frunces, frunce, fruncimos, fruncís, fruncen,
-        C - ZC  CONOCER: conozco, conoces, conoce, conocemos, conocéis, conocen, 
-        C - G   DECIR:  digo, dices, dice, decimos, decís, dicen,
-                HACER:  hago, haces, hace, hacemos, hacéis, hacen,
-                TENER:  tengo, tienes, tiene, tenemos, tenéis, tienen,
-                VENIR:  vengo, vienes, viene, venemos, venéis, vienen,
-                SALIR:  salgo, sales, sale, salimos, salís, salen, 
-                PONER:  pongo, pones, pone, ponemos, ponéis, ponen,
-        -GUIR:  DISTINGUIR: distingo, distingues, distingue, distinguimos, distinguís, distinguen,
-        -UIR:   CONCLUIR:  concluyo, concluyes, concluye, concluimos, concluís, concluyen,
+        G - J   ESCOGER:  escojo, escoges, escoge, escogemos, escogéis, escogen
+        C - Z   FRUNCIR:  frunzo, frunces, frunce, fruncimos, fruncís, fruncen
+        C - ZC  CONOCER: conozco, conoces, conoce, conocemos, conocéis, conocen,
+        C - G   DECIR:  digo, dices, dice, decimos, decís, dicen
+                HACER:  hago, haces, hace, hacemos, hacéis, hacen
+                TENER:  tengo, tienes, tiene, tenemos, tenéis, tienen
+                VENIR:  vengo, vienes, viene, venemos, venéis, vienen
+                SALIR:  salgo, sales, sale, salimos, salís, salen,
+                PONER:  pongo, pones, pone, ponemos, ponéis, ponen
+        -GUIR:  DISTINGUIR: distingo, distingues, distingue, distinguimos, distinguís, distinguen
+        -UIR:   CONCLUIR:  concluyo, concluyes, concluye, concluimos, concluís, concluyen
 
     Irregular 'Yo':
-        CABER: quepo, cabes, cabe, cabemos, cabéis, caben,
-        CAER:  caigo, caes, cae, caemos, caéis, caen,
-        DAR:  doy, das, da, damos, dais, dan,
-        SABER:  sé, sabes, sabe, sabemos, sabéis, saben,
-        TRAER:  traigo, traes, trae, traemos, traéis, traen,
-        VALER:  valgo, vales vale, valemos, valéis, valen,
-        VER:  veo, ves, ve, vemos, véis, ven,
-""" ""
+        CABER: quepo, cabes, cabe, cabemos, cabéis, caben
+        CAER:  caigo, caes, cae, caemos, caéis, caen
+        DAR:  doy, das, da, damos, dais, dan
+        SABER:  sé, sabes, sabe, sabemos, sabéis, saben
+        TRAER:  traigo, traes, trae, traemos, traéis, traen
+        VALER:  valgo, vales vale, valemos, valéis, valen
+        VER:  veo, ves, ve, vemos, véis, ven
+'''''
 import random
 
 
@@ -48,7 +48,7 @@ def Presente():
     verbos = {
         "hablar": "-AR:  -o, -as, -a, -amos, -áis, -an",
         "comer": "-ER:  -o, -es, -e, -emos, -éis, -en",
-        "vivir": "-IR:  -o, -es, -e, -imos, -s, -en,",
+        "vivir": "-IR:  -o, -es, -e, -imos, -s, -en",
         "haber": "HABER:  he, has, ha, hemos, habéis, han",
         "ser": "SER:  soy, eres, es, somos, sois, son",
         "estar": "ESTAR: estoy, estás, está, estamos, estáis, están",

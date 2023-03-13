@@ -1,4 +1,4 @@
-"""''
+'''''
 Il Passato Prossimo:
     Compound tense that can use ESSERE or AVERE as the auxiliary verb
     (option obj. pronoun) AUX (present) + Past Participle
@@ -24,9 +24,9 @@ Il Passato Prossimo:
         Rompere (rotto)
 
 *Combinare con i verbi ausiliari imperfetti per creare il trapassato prossimo
-ESSERE: ero, eri, era, eravamo, eravate, erano,
-AVERE:  avevo, avevi, aveva, avevamo, avevate, avevano,
-""" ""
+ESSERE: ero, eri, era, eravamo, eravate, erano
+AVERE:  avevo, avevi, aveva, avevamo, avevate, avevano
+'''''
 import random
 
 

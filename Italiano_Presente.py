@@ -1,41 +1,41 @@
 import random
 
-"""''
+'''''
 Il Presente:
-    -ARE:  -o, -i, -a, -iamo, -ate, -ano,
-    -ERE:  -o, -i, -e, -iamo, -ete, -ono,
-    -IRE:  -o, -i, -e, -iamo, -ite, -ono,
-        -isco, -isci, -isce, -iamo, -ite, -iscono,
+    -ARE:  -o, -i, -a, -iamo, -ate, -ano
+    -ERE:  -o, -i, -e, -iamo, -ete, -ono
+    -IRE:  -o, -i, -e, -iamo, -ite, -ono
+        -isco, -isci, -isce, -iamo, -ite, -iscono
 
     Stem Changers:
-        -CH- CERCARE:  cerco, cerchi, cerca, cerchiamo, cercate, cercano,
-        -GH- PAGARE:   pago, paghi, paga, paghiamo, pagate, pagano,
+        -CH- CERCARE:  cerco, cerchi, cerca, cerchiamo, cercate, cercano
+        -GH- PAGARE:   pago, paghi, paga, paghiamo, pagate, pagano
 
     Irregulars:
-        ESSERE:   sono, sei, è, siamo, siete, sono,
-        AVERE:    ho, hai, ha, abbiamo, avete, hanno,
-        STARE:    sto, stai, sta, stiamo, state, stanno, 
-        FARE:     faccio, fai, fa, facciamo, fate, fanno,
-        DARE:     do, dai, da, diamo, date, danno,
-        VENIRE:   vengo, vieni, viene, veniamo, venite, vengono,
-        TENERE:   tengo, tieni, tiene, teniamo, tenete, tengono,
-        ANDARE:   vado, vai, va, andiamo, andate, vanno,
-        DIRE:     dico, dici, dice, diciamo, dite, dicono,
-        DOVERE:   devo (debbo), devi, deve, dobbiamo, dovete, devono (debbono),
-        POTERE:   posso, puoi, può, possiamo, potete, possono,
-        VOLERE:   voglio, vuoi, vuole, vogliamo, volete, vogliono, 
-        SAPERE:   so, sai, sa, sappiamo, sapete, sanno,
-        CAPIRE:   capisco, capisci, capisce, capiamo, capite, capiscono,    (You know, I'm not sure why these is included; they're regular for -isc-)
-        PULIRE:   pulisco, pulisci, pulisce, puliamo, pulite, puliscono,
-        BERE:     bevo, bevi, beve, beviamo, bevete, bevono,
-        USCIRE:   esco, esci, esce, usciamo, uscite, escono,
-        SALIRE:   salgo, sali, sale, saliamo, salite, salgono,
-        PORRE:    pongo, poni, pone, poniamo, ponete, pongono, 
-        MORIRE:   muoio, muori, muore, moriamo, morite, muoiono, 
+        ESSERE:   sono, sei, è, siamo, siete, sono
+        AVERE:    ho, hai, ha, abbiamo, avete, hanno
+        STARE:    sto, stai, sta, stiamo, state, stanno
+        FARE:     faccio, fai, fa, facciamo, fate, fanno
+        DARE:     do, dai, da, diamo, date, danno
+        VENIRE:   vengo, vieni, viene, veniamo, venite, vengono
+        TENERE:   tengo, tieni, tiene, teniamo, tenete, tengono
+        ANDARE:   vado, vai, va, andiamo, andate, vanno
+        DIRE:     dico, dici, dice, diciamo, dite, dicono
+        DOVERE:   devo (debbo), devi, deve, dobbiamo, dovete, devono (debbono)
+        POTERE:   posso, puoi, può, possiamo, potete, possono
+        VOLERE:   voglio, vuoi, vuole, vogliamo, volete, vogliono
+        SAPERE:   so, sai, sa, sappiamo, sapete, sanno
+        CAPIRE:   capisco, capisci, capisce, capiamo, capite, capiscono    (You know, I'm not sure why these is included; they're regular for -isc-)
+        PULIRE:   pulisco, pulisci, pulisce, puliamo, pulite, puliscono
+        BERE:     bevo, bevi, beve, beviamo, bevete, bevono
+        USCIRE:   esco, esci, esce, usciamo, uscite, escono
+        SALIRE:   salgo, sali, sale, saliamo, salite, salgono
+        PORRE:    pongo, poni, pone, poniamo, ponete, pongono
+        MORIRE:   muoio, muori, muore, moriamo, morite, muoiono
 
         *CONOSCERE, SENTRIRE, & DORMIRE are regular  
             (Yes, dormire is the model verb I used.  No, I'm not trying to patronize you. )
-""" ""
+'''''
 
 
 def Presente():
@@ -323,55 +323,52 @@ def Presente():
     else:
         print("Mi dispiace, è sbagliato.  Riprova.")
         if verbo == "parlare":
-            print("-ARE:  -o, -i, -a, -iamo, -ate, -ano,")
+            print("-ARE:  -o, -i, -a, -iamo, -ate, -ano")
         elif verbo == ("leggere" or "conoscere"):
-            print("-ERE:  -o, -i, -e, -iamo, -ete, -ono,")
+            print("-ERE:  -o, -i, -e, -iamo, -ete, -ono")
         elif verbo == ("dormire" or "sentire"):
-            print("-IRE:  -o, -i, -e, -iamo, -ite, -ono,")
+            print("-IRE:  -o, -i, -e, -iamo, -ite, -ono")
         elif verbo == ("finire" or "capire" or "pulire"):
-            print("-isco, -isci, -isce, -iamo, -ite, -iscono,")
+            print("-isco, -isci, -isce, -iamo, -ite, -iscono")
         elif verbo == "cercare":
-            print("-CH- CERCARE:  cerco, cerchi, cerca, cerchiamo, cercate, cercano,")
+            print("-CH- CERCARE:  cerco, cerchi, cerca, cerchiamo, cercate, cercano")
         elif verbo == "pulire":
-            print("-GH- PAGARE:   pago, paghi, paga, paghiamo, pagate, pagano,")
+            print("-GH- PAGARE:   pago, paghi, paga, paghiamo, pagate, pagano")
         elif verbo == "essere":
-            print("ESSERE:   sono, sei, è, siamo, siete, sono,")
+            print("ESSERE:   sono, sei, è, siamo, siete, sono")
         elif verbo == "avere":
-            print("AVERE:    ho, hai, ha, abbiamo, avete, hanno,")
+            print("AVERE:    ho, hai, ha, abbiamo, avete, hanno")
         elif verbo == "stare":
-            print("STARE:    sto, stai, sta, stiamo, state, stanno,")
+            print("STARE:    sto, stai, sta, stiamo, state, stanno")
         elif verbo == "fare":
-            print("FARE:     faccio, fai, fa, facciamo, fate, fanno,")
+            print("FARE:     faccio, fai, fa, facciamo, fate, fanno")
         elif verbo == "dare":
-            print("DARE:     do, dai, da, diamo, date, danno,")
+            print("DARE:     do, dai, da, diamo, date, danno")
         elif verbo == "venire":
-            print("VENIRE:   vengo, vieni, viene, veniamo, venite, vengono,")
+            print("VENIRE:   vengo, vieni, viene, veniamo, venite, vengono")
         elif verbo == "tenire":
-            print("TENERE:   tengo, tieni, tiene, teniamo, tenete, tengono,")
+            print("TENERE:   tengo, tieni, tiene, teniamo, tenete, tengono")
         elif verbo == "amdare":
-            print("ANDARE:   vado, vai, va, andiamo, andate, vanno,")
+            print("ANDARE:   vado, vai, va, andiamo, andate, vanno")
         elif verbo == "dire":
-            print("DIRE:     dico, dici, dice, diciamo, dite, dicono,")
+            print("DIRE:     dico, dici, dice, diciamo, dite, dicono")
         elif verbo == "dovere":
             print(
-                "DOVERE:   devo (debbo), devi, deve, dobbiamo, dovete, devono (debbono),"
+                "DOVERE:   devo (debbo), devi, deve, dobbiamo, dovete, devono (debbono)"
             )
         elif verbo == "potere":
-            print("POTERE:   posso, puoi, può, possiamo, potete, possono,")
+            print("POTERE:   posso, puoi, può, possiamo, potete, possono")
         elif verbo == "volere":
-            print("VOLERE:   voglio, vuoi, vuole, vogliamo, volete, vogliono, ")
+            print("VOLERE:   voglio, vuoi, vuole, vogliamo, volete, vogliono")
         elif verbo == "sapere":
-            print("SAPERE:   so, sai, sa, sappiamo, sapete, sanno,")
+            print("SAPERE:   so, sai, sa, sappiamo, sapete, sanno")
         elif verbo == "bere":
-            print("BERE:     bevo, bevi, beve, beviamo, bevete, bevono,")
+            print("BERE:     bevo, bevi, beve, beviamo, bevete, bevono")
         elif verbo == "uscire":
-            print("USCIRE:   esco, esci, esce, usciamo, uscite, escono,")
+            print("USCIRE:   esco, esci, esce, usciamo, uscite, escono")
         elif verbo == "salire":
-            print("SALIRE:   salgo, sali, sale, saliamo, salite, salgono,")
+            print("SALIRE:   salgo, sali, sale, saliamo, salite, salgono")
         elif verbo == "porre":
-            print("PORRE:    pongo, poni, pone, poniamo, ponete, pongono,")
+            print("PORRE:    pongo, poni, pone, poniamo, ponete, pongono")
         else:
-            print("MORIRE:   muoio, muori, muore, moriamo, morite, muoiono,")
-
-
-# return verbs.get("porre") OR return verbs["porre"]  SECONDO LUI
+            print("MORIRE:   muoio, muori, muore, moriamo, morite, muoiono")

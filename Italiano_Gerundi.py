@@ -1,4 +1,4 @@
-"""''
+'''''
 I Participi Presenti & Gerundi:
     -ARE: -ando 
     -ERE: -endo
@@ -15,7 +15,7 @@ I Participi Presenti & Gerundi:
         essendo, avendo, stando, dando, venendo, tenendo, andando, dovendo, 
         potendo, volendo, sapendo, capendo, pulendo, uscendo, salendo, morendo, 
 
-""" ""
+'''''
 import random
 
 

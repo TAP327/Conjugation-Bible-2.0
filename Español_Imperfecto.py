@@ -1,26 +1,26 @@
-"""''
+'''''
 El Imperfecto:
-    -AR: -aba, -abas, -aba, -ábamos, -abais, -aban,
-    -ER: -ía, -ías, -ía, -íamos, -íais, -ían,
-    -IR: -ía, -ías, -ía, -íamos, -íais, -ían, 
+    -AR: -aba, -abas, -aba, -ábamos, -abais, -aban
+    -ER: -ía, -ías, -ía, -íamos, -íais, -ían
+    -IR: -ía, -ías, -ía, -íamos, -íais, -ían
 
     Verbos Irregulares:
-        SER: era, eras, era, éramos, erais, eran,
-        IR: iba, ibas, iba, íbamos, ibais, iban,
+        SER: era, eras, era, éramos, erais, eran
+        IR: iba, ibas, iba, íbamos, ibais, iban
     
     Desde Hace:
         La preposición que significa 'had been': "Esperaba desde hace dos horas"
-""" ""
+'''''
 import random
 
 
 def Imperfecto():
     pronombres = ["yo", "tu", "él", "nosotros", "vosotros", "ellos"]
     verbos = [
-        ["hablar", "-AR: -aba, -abas, -aba, -ábamos, -abais, -aban,"],
-        ["comer", "-ER: -ía, -ías, -ía, -íamos, -íais, -ían,"],
-        ["vivir", "-IR: -ía, -ías, -ía, -íamos, -íais, -ían,"],
-        ["ser", "SER: era, eras, era, éramos, erais, eran,"],
+        ["hablar", "-AR: -aba, -abas, -aba, -ábamos, -abais, -aban"],
+        ["comer", "-ER: -ía, -ías, -ía, -íamos, -íais, -ían"],
+        ["vivir", "-IR: -ía, -ías, -ía, -íamos, -íais, -ían"],
+        ["ser", "SER: era, eras, era, éramos, erais, eran"],
         ["ir", "iba, ibas, iba, íbamos, ibais, iban"],
     ]
     pronombre = random.choice(pronombres)
@@ -92,14 +92,3 @@ def Imperfecto():
     else:
         print("¡Gracias por jugar!")
         exit()
-
-
-
-"""''
-Metas y Recomendaciones:  
-    - String concatenation de nuevo
-    - Maybe list of list couples instead of dictionary and use slicing & indexing to avoid the confusion
-    - Return, don't print
-    - Meta es menos que 2.5 lineas per conjugación
-
-""" ""
