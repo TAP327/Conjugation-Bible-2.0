@@ -3,6 +3,7 @@ import Español_Presente as EP
 import Español_Gerundios as EG
 import Español_Imperfecto as EI
 import Español_Pretérito as EPret
+import Português_Presente as PP
 import Italiano_Presente as IP
 import Italiano_Gerundi as IG
 import Italiano_Imperfetto as II
@@ -15,6 +16,7 @@ def Omnia():
         EG.Gerundios(),
         EI.Imperfecto(),
         EPret.Pretérito(),
+        PP.Presente(),
         IP.Presente(),
         IG.Gerundi(),
         II.Imperfetto(),
@@ -32,6 +34,11 @@ def Todos():
     ]
     random.choice(Tiempos_Verbales)
 
+def Tudos():
+    Tempos_Verbais = [
+        PP.Presente()
+    ]
+    random.choice(Tempos_Verbais)
 
 def Tutti():
     Tempi_Verbali = [
@@ -44,7 +51,7 @@ def Tutti():
 
 
 def Omnes_Praesentes():
-    Praesentia_tempora = [EP.Presente(), IP.Presente()]
+    Praesentia_tempora = [EP.Presente(), PP.Presente(), IP.Presente()]
     random.choice(Praesentia_tempora)
 
 
@@ -100,7 +107,16 @@ def Romance_Dominus():
                     "Lo siento, pero ese tiempo todavía no existe en la Biblia de Conjugación :("
                 )
         elif elige_linguam.lower() == "b":
-            print("Eu sento, mas português ainda não existe na Biblia de Conjugação :(")
+            if tempus_de_linguam.lower() == "a":
+                while 1:
+                    PP.Presente()
+            elif tempus_de_linguam.lower() == "e":
+                while 1:
+                    Tudos()
+            else:
+                print(
+                    "Eu sento, mas esse tempo ainda não existe na Biblia de Conjugação. :("
+                )
         elif elige_linguam.lower() == "c":
             if tempus_de_linguam.lower() == "a":
                 while 1:
