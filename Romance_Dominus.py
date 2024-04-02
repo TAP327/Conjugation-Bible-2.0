@@ -8,6 +8,7 @@ import Italiano_Presente as IP
 import Italiano_Gerundi as IG
 import Italiano_Imperfetto as II
 import Italiano_Passato_Prossimo as IPP
+import Italiano_Futuro_e_Condizionale as IFC
 
 
 def Omnia():
@@ -21,6 +22,8 @@ def Omnia():
         IG.Gerundi(),
         II.Imperfetto(),
         IPP.Passato_Prossimo(),
+        IFC.Italiano_Futuro(),
+        IFC.Italiano_Condizionale(),
     ]
     random.choice(Verbum_Temporis)
 
@@ -46,6 +49,8 @@ def Tutti():
         IG.Gerundi(),
         II.Imperfetto(),
         IPP.Passato_Prossimo(),
+        IFC.Italiano_Futuro(),
+        IFC.Italiano_Condizionale(),
     ]
     random.choice(Tempi_Verbali)
 
@@ -69,6 +74,13 @@ def Omnes_Praeteriti():
     Praeteritis_Temporibus = [EPret.Pretérito(), IPP.Passato_Prossimo()]
     random.choice(Praeteritis_Temporibus)
 
+def Omne_Futurum():
+    Tempus_Futurum = [IFC.Italiano_Futuro()]
+    random.choice(Tempus_Futurum)
+
+def Omnes_Conditionales():
+    Conditionalis_Tempora = [IFC.Italiano_Condizionale()]
+    random.choice(Conditionalis_Tempora)
 
 def Romance_Dominus():
     electio = input(
@@ -84,7 +96,7 @@ def Romance_Dominus():
         )
         tempus_de_linguam = input(
             "Within your selected language, would you like to study... \
-            a. Present Simple  b. Present Progressive  c. Imperfect  d. Preterite & Composite Past  e. All!  "
+            a. Present Simple  b. Present Progressive  c. Imperfect  d. Preterite & Composite Past  e. Future  f. Conditional  g. All!  "
         )
         if elige_linguam.lower() == "a":
             if tempus_de_linguam.lower() == "a":
@@ -99,7 +111,7 @@ def Romance_Dominus():
             elif tempus_de_linguam.lower() == "d":
                 while 1:
                     EPret.Pretérito()
-            elif tempus_de_linguam.lower() == "e":
+            elif tempus_de_linguam.lower() == "g":
                 while 1:
                     Todos()
             else:
@@ -110,7 +122,7 @@ def Romance_Dominus():
             if tempus_de_linguam.lower() == "a":
                 while 1:
                     PP.Presente()
-            elif tempus_de_linguam.lower() == "e":
+            elif tempus_de_linguam.lower() == "g":
                 while 1:
                     Tudos()
             else:
@@ -130,6 +142,12 @@ def Romance_Dominus():
             elif tempus_de_linguam.lower() == "d":
                 while 1:
                     IPP.Passato_Prossimo()
+            elif tempus_de_linguam.lower() == "e":
+                while 1:
+                    IFC.Italiano_Futuro()
+            elif tempus_de_linguam.lower() == "f":
+                while 1:
+                    IFC.Italiano_Condizionale()
             else:
                 while 1:
                     Tutti()
@@ -140,7 +158,7 @@ def Romance_Dominus():
         print("Finem programmatis. Gratias tibi!")
     elif electio == "b":
         elige_tempus = input(
-            "Would you like to study... a. Present Simple  b. Present Progressive  c. Imperfect  d. Preterite & Composite Past  "
+            "Would you like to study... a. Present Simple  b. Present Progressive  c. Imperfect  d. Preterite & Composite Past  e. Future  f. Conditional"
         )
         if elige_tempus.lower() == "a":
             Omnes_Praesentes()
@@ -148,8 +166,12 @@ def Romance_Dominus():
             Omnia_Gernudia()
         elif elige_tempus.lower() == "c":
             Omnia_Imperfecta()
-        else:
+        elif elige_tempus.lower() == "d":
             Omnes_Praeteriti()
+        elif elige_tempus.lower() == "e":
+            Omne_Futurum()
+        elif elige_tempus.lower() == "f":
+            Omnes_Conditionales()
     else:
         print("De primo!")
         while 1:
@@ -165,12 +187,16 @@ Next up is...
         -Getting Spanish Present to work outside of Run & Debug
     -Starting on Spanish Imperfect :)
     -Understand Dictionaries better (working on it)
+    -Return to main menu
+    -Volete != (voi) volere??? same with venire, dare, stare
+    -Choose specific verbs
 
 Long Term Goals:
     - Code all tenses across Spanish, Portuguese, Italian, & French
     - Have programs for each language that mix tenses, each tense that mix languages, and all tenses/languages
     - Create an executable (preferably with a UI that doesn't look like it was built in 2000)
     - Add a "See Notes" function for desperate times
+    -TKinter
 
 return verbs.get("porre") OR return verbs["porre"]  SECONDO LUI
 

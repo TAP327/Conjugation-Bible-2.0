@@ -1,6 +1,6 @@
 import random
 
-"""''
+'''''
 Il Presente:
     -ARE:  -o, -i, -a, -iamo, -ate, -ano
     -ERE:  -o, -i, -e, -iamo, -ete, -ono
@@ -22,20 +22,20 @@ Il Presente:
         ANDARE:   vado, vai, va, andiamo, andate, vanno
         DIRE:     dico, dici, dice, diciamo, dite, dicono
         DOVERE:   devo (debbo), devi, deve, dobbiamo, dovete, devono (debbono)
-        POTERE:   posso, puoi, può, possiamo, potete, possono
-        VOLERE:   voglio, vuoi, vuole, vogliamo, volete, vogliono
-        SAPERE:   so, sai, sa, sappiamo, sapete, sanno
-        CAPIRE:   capisco, capisci, capisce, capiamo, capite, capiscono    (You know, I'm not sure why these is included; they're regular for -isc-)
+     X   POTERE:   posso, puoi, può, possiamo, potete, possono
+     X   VOLERE:   voglio, vuoi, vuole, vogliamo, volete, vogliono
+     X   SAPERE:   so, sai, sa, sappiamo, sapete, sanno
+        CAPIRE:   capisco, capisci, capisce, capiamo, capite, capiscono    (You know, I'm not sure why these are included; they're regular for -isc-)
         PULIRE:   pulisco, pulisci, pulisce, puliamo, pulite, puliscono
         BERE:     bevo, bevi, beve, beviamo, bevete, bevono
         USCIRE:   esco, esci, esce, usciamo, uscite, escono
-        SALIRE:   salgo, sali, sale, saliamo, salite, salgono
+     X   SALIRE:   salgo, sali, sale, saliamo, salite, salgono
         PORRE:    pongo, poni, pone, poniamo, ponete, pongono
-        MORIRE:   muoio, muori, muore, moriamo, morite, muoiono
+     X   MORIRE:   muoio, muori, muore, moriamo, morite, muoiono
 
-        *CONOSCERE, SENTRIRE, & DORMIRE are regular  
+     X   *CONOSCERE, SENTIRE, & DORMIRE are regular  
             (Yes, dormire is the model verb I used.  No, I'm not trying to patronize you. )
-""" ""
+'''''
 
 
 def Presente():
@@ -214,7 +214,7 @@ def Presente():
         elif verbo == "avere":
             suffisso = "ha"
         elif verbo == "dare":
-            suffisso = "à"
+            suffisso = "a"
         elif verbo == "venire":
             suffisso = "viene"
         elif verbo == "tenire":

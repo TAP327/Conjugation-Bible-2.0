@@ -13,15 +13,18 @@ Il Passato Prossimo:
         past participle agreement in gender and number
     
     Casa di Essere:
-        Scendere (sceso)        Restare (restato)       Vivere (vissuto)
-        Essere (stato)          Rimanere (rimasto)      Stare (stato)
-        Uscire (uscito)         Salire (salito)         Venire (venuto)
-        Andare (andato)         Cadere (caduto)         Nascere (nato)
-        Divenire (divenuto)     Diventare (diventato)   Entrare (entrato)
-        Rivenire (rivenuto)     Cadere (caduto)         Ritornare (ritornato)
-        Arrivare (arrivato)     Morire (morto)          Partire (partito)
-        chiedere (chiesto)      Chiudere (chiuso)        Dire (detto)
-        Rompere (rotto)
+        Andare (andato)         Arrivare (arrivato)     Cadere (caduto)
+        Divenire (divenuto)     Diventare (diventato)   Entrare (entrato)       
+        Essere (stato)          Esistere (esistito)     Morire (morto)          
+        Nascere (nato)          Occorrere (occorso)     Partire (partito)       
+        Restare (restato)       Rimanere (rimasto)      Ritornare (ritornato)   
+        Rivenire (rivenuto)     Scappare (scappato)     Scendere (sceso)        
+        Stare (stato)           Svanire (svanito)       Tornare (tornato)       
+        Uscire (uscito)         Venire (venito)         
+
+    Altri Weirdi
+        Chiedere (chiesto)      Chiudere (chiuso)       Dire (detto)            
+        Rompere (rotto)         Vivere (vissuto)
 
 *Combinare con i verbi ausiliari imperfetti per creare il trapassato prossimo
 ESSERE: ero, eri, era, eravamo, eravate, erano
@@ -56,10 +59,15 @@ def Passato_Prossimo():
         "diventare",
         "entrare",
         "rivenire",
+        "tornare",
         "ritornare",
         "arrivare",
         "morire",
         "partire",
+        "esistere",
+        "occorrere",
+        "scappare",
+        "svanire"
     ]
     pronomo = random.choice(pronomi)
     verbo = random.choice(verbi)
@@ -250,13 +258,13 @@ def Passato_Prossimo():
             )
             print("Mi dispiace, è sbagliato.  Riprova.")
     elif verbo == "salire":
-        if pronomo == "lui" and risposta == "è salito":
+        if pronomo == "lui" and risposta == "ha salito":
             print("Corretto!")
-        elif pronomo == "lei" and risposta == "è salita":
+        elif pronomo == "lei" and risposta == "ha salito":
             print("Corretto!")
-        elif pronomo == "loro (m.)" and risposta == "sono saliti":
+        elif pronomo == "loro (m.)" and risposta == "hanno salito":
             print("Corretto!")
-        elif pronomo == "loro (f.)" and risposta == "sono salite":
+        elif pronomo == "loro (f.)" and risposta == "hanno salito":
             print("Corretto!")
         else:
             print(
@@ -426,6 +434,51 @@ def Passato_Prossimo():
             print("Corretto!")
         elif pronomo == "loro (f.)" and risposta == "sono partite":
             print("Corretto!")
+    elif verbo == "esistere":
+        if pronomo == "lui" and risposta == "è esistito":
+            print("Corretto!")
+        elif pronomo == "lei" and risposta == "è esistita":
+            print("Corretto!")
+        elif pronomo == "loro (m.)" and risposta == "sono esistiti":
+            print("Corretto!")
+        elif pronomo == "loro (f.)" and risposta == "sono esistite":
+            print("Corretto!")
+    elif verbo == "occurrere":
+        if pronomo == "lui" and risposta == "è occurso":
+            print("Corretto!")
+        elif pronomo == "lei" and risposta == "è occursa":
+            print("Corretto!")
+        elif pronomo == "loro (m.)" and risposta == "sono occursi":
+            print("Corretto!")
+        elif pronomo == "loro (f.)" and risposta == "sono occurse":
+            print("Corretto!")
+    elif verbo == "tornare":
+        if pronomo == "lui" and risposta == "è tornato":
+            print("Corretto!")
+        elif pronomo == "lei" and risposta == "è tornata":
+            print("Corretto!")
+        elif pronomo == "loro (m.)" and risposta == "sono tornati":
+            print("Corretto!")
+        elif pronomo == "loro (f.)" and risposta == "sono tornate":
+            print("Corretto!")
+    elif verbo == "scappare":
+        if pronomo == "lui" and risposta == "è scappato":
+            print("Corretto!")
+        elif pronomo == "lei" and risposta == "è scappata":
+            print("Corretto!")
+        elif pronomo == "loro (m.)" and risposta == "sono scappati":
+            print("Corretto!")
+        elif pronomo == "loro (f.)" and risposta == "sono scappate":
+            print("Corretto!")
+    elif verbo == "svanire":
+        if pronomo == "lui" and risposta == "è svanito":
+            print("Corretto!")
+        elif pronomo == "lei" and risposta == "è svanita":
+            print("Corretto!")
+        elif pronomo == "loro (m.)" and risposta == "sono svaniti":
+            print("Corretto!")
+        elif pronomo == "loro (f.)" and risposta == "sono svanite":
+            print("Corretto!")
         else:
             print(
                 "Verbi Riflessivi: pronomo riflessivo + essere (presente) + participio passato"
@@ -480,5 +533,23 @@ def Passato_Prossimo():
             print("Arrivare (arrivato)")
         elif verbo == "morire":
             print("Morire (morto)")
-        else:
+        elif verbo == "partire":
             print("Partire (partito)")
+        elif verbo == "dire":
+            print("Dire (detto)")
+        elif verbo == "chiedere":
+            print("Chiedere (chiesto)")
+        elif verbo == "chiudere":
+            print ("Chiudere (chiuso)")
+        elif verbo == "esistere":
+            print ("Esistere: esistito")
+        elif verbo == "occorrere":
+            print("Occorrere (occurso)")
+        elif verbo == "rompere":
+            print("Rompere (rotto)")
+        elif verbo == "scappare":
+            print("Scappare (scappato)")
+        elif verbo == "svanire":
+            print("Svanire (svanito)")
+        else:
+            print("Tornare (tornato)")

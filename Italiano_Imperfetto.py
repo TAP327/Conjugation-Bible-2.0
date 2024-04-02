@@ -9,9 +9,9 @@ L'Imperfetto:
     ESSERE:  ero, eri, era, eravamo, eravate, erano  
         *Used for time: "erano le due del pomeriggio", "era lunedi"
     FARE:  facevo, facevi, faceva, facevamo, facevate, facevano
-    BERE:  bevevo, bevevi, bevevo, bevevamo, bevevate, bevevano
+    BERE:  bevevo, bevevi, beveva, bevevamo, bevevate, bevevano
     DIRE:  dicevo, dicevi, dicevo, dicevamo, dicevate, dicevano
-    TRADURRE:  traducevo, traducevi, traducevo, traducevamo, traducevate, traducevano
+    TRADURRE:  traducevo, traducevi, traduceva, traducevamo, traducevate, traducevano
     
     Note: Dare is suspiciously regular
     
@@ -134,7 +134,7 @@ def Imperfetto():
             print("Corretto!")
         else:
             print("Mi dispiace, è sbagliato.  Riprova.")
-            print("BERE:  bevevo, bevevi, bevevo, bevevamo, bevevate, bevevano")
+            print("BERE:  bevevo, bevevi, beveva, bevevamo, bevevate, bevevano")
     elif verbo == "dire":
         if pronomo == "io" and risposta == "dicevo":
             print("Corretto!")
